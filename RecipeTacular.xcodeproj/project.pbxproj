@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C47AFE8ECB7F95A59B0F744 /* Pods_RecipeTacularTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92947D940098B0F2C196791F /* Pods_RecipeTacularTests.framework */; };
+		95BE35C11CF30D67009422E2 /* Pods_RecipeTacular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EBFFE5644CFC3720B2AE33 /* Pods_RecipeTacular.framework */; };
+		A51FF2AA2909B9FB008C02D0 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FF2A92909B9FB008C02D0 /* Recipe.swift */; };
+		A51FF2B22909BD58008C02D0 /* RecipeTacularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FF2B12909BD58008C02D0 /* RecipeTacularTests.swift */; };
+		A527A087290C2E17008254C8 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527A086290C2E17008254C8 /* PopUp.swift */; };
+		A56732A12909EC070030B5E6 /* RecipeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56732A02909EC070030B5E6 /* RecipeRow.swift */; };
+		A56732A32909EC1C0030B5E6 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56732A22909EC1C0030B5E6 /* RecipeDetail.swift */; };
+		A5AF0458290ACC9E006B57EC /* RecipeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF0457290ACC9D006B57EC /* RecipeSearch.swift */; };
+		A5AF045D290AFA7C006B57EC /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF045C290AFA7C006B57EC /* RecipeModel.swift */; };
+		A5AF0460290B13FC006B57EC /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF045F290B13FC006B57EC /* ImageLoader.swift */; };
+		A5AF0463290B145D006B57EC /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF0462290B145D006B57EC /* AsyncImageView.swift */; };
+		A5AF0465290B6C6B006B57EC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF0464290B6C6B006B57EC /* Extensions.swift */; };
+		A5AFA3BC2909D45F00BE578D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFA3BB2909D45F00BE578D /* NetworkManager.swift */; };
+		A5BF461D2909A89C00CEDA8A /* RecipeTacular.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF461C2909A89C00CEDA8A /* RecipeTacular.swift */; };
+		A5BF461F2909A89C00CEDA8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF461E2909A89C00CEDA8A /* ContentView.swift */; };
+		A5BF46212909A89E00CEDA8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BF46202909A89E00CEDA8A /* Assets.xcassets */; };
+		A5BF46242909A89F00CEDA8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BF46232909A89F00CEDA8A /* Preview Assets.xcassets */; };
+		A5BF462D2909B93700CEDA8A /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF462C2909B93700CEDA8A /* RecipeList.swift */; };
+		A5FCF714290C72C800D7F62C /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FCF713290C72C800D7F62C /* DatabaseManager.swift */; };
+		A5FCF71B290CE39500D7F62C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FCF71A290CE39500D7F62C /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A51FF2B32909BD58008C02D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5BF46112909A89B00CEDA8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5BF46182909A89C00CEDA8A;
+			remoteInfo = RecipeTacular;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		381376FB6F77D848B0CFB367 /* Pods-RecipeTacularTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeTacularTests.debug.xcconfig"; path = "Target Support Files/Pods-RecipeTacularTests/Pods-RecipeTacularTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FF4D321C2A3167B9651AB5D /* Pods-RecipeTacularTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeTacularTests.release.xcconfig"; path = "Target Support Files/Pods-RecipeTacularTests/Pods-RecipeTacularTests.release.xcconfig"; sourceTree = "<group>"; };
+		56A5089C7842B490C3AEC8DF /* Pods-RecipeTacular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeTacular.release.xcconfig"; path = "Target Support Files/Pods-RecipeTacular/Pods-RecipeTacular.release.xcconfig"; sourceTree = "<group>"; };
+		72EBFFE5644CFC3720B2AE33 /* Pods_RecipeTacular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeTacular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92947D940098B0F2C196791F /* Pods_RecipeTacularTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeTacularTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93CF6BA3CBA88751213AB63C /* Pods-RecipeTacular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeTacular.debug.xcconfig"; path = "Target Support Files/Pods-RecipeTacular/Pods-RecipeTacular.debug.xcconfig"; sourceTree = "<group>"; };
+		A51FF2A92909B9FB008C02D0 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		A51FF2AF2909BD58008C02D0 /* RecipeTacularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeTacularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51FF2B12909BD58008C02D0 /* RecipeTacularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTacularTests.swift; sourceTree = "<group>"; };
+		A527A086290C2E17008254C8 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
+		A56732A02909EC070030B5E6 /* RecipeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRow.swift; sourceTree = "<group>"; };
+		A56732A22909EC1C0030B5E6 /* RecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
+		A5AF0457290ACC9D006B57EC /* RecipeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearch.swift; sourceTree = "<group>"; };
+		A5AF0459290AF866006B57EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A5AF045C290AFA7C006B57EC /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		A5AF045F290B13FC006B57EC /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		A5AF0462290B145D006B57EC /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		A5AF0464290B6C6B006B57EC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A5AFA3BB2909D45F00BE578D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = ../../../../NetworkManager.swift; sourceTree = "<group>"; };
+		A5BF46192909A89C00CEDA8A /* RecipeTacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeTacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BF461C2909A89C00CEDA8A /* RecipeTacular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTacular.swift; sourceTree = "<group>"; };
+		A5BF461E2909A89C00CEDA8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5BF46202909A89E00CEDA8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5BF46232909A89F00CEDA8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5BF462C2909B93700CEDA8A /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
+		A5FCF713290C72C800D7F62C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		A5FCF71A290CE39500D7F62C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A51FF2AC2909BD58008C02D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C47AFE8ECB7F95A59B0F744 /* Pods_RecipeTacularTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BF46162909A89C00CEDA8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BE35C11CF30D67009422E2 /* Pods_RecipeTacular.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21B5678184889BAC5449A05E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93CF6BA3CBA88751213AB63C /* Pods-RecipeTacular.debug.xcconfig */,
+				56A5089C7842B490C3AEC8DF /* Pods-RecipeTacular.release.xcconfig */,
+				381376FB6F77D848B0CFB367 /* Pods-RecipeTacularTests.debug.xcconfig */,
+				4FF4D321C2A3167B9651AB5D /* Pods-RecipeTacularTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A51FF2B02909BD58008C02D0 /* RecipeTacularTests */ = {
+			isa = PBXGroup;
+			children = (
+				A51FF2B12909BD58008C02D0 /* RecipeTacularTests.swift */,
+				A5FCF71A290CE39500D7F62C /* Constants.swift */,
+			);
+			path = RecipeTacularTests;
+			sourceTree = "<group>";
+		};
+		A5AF045A290AF8D7006B57EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A56732A02909EC070030B5E6 /* RecipeRow.swift */,
+				A56732A22909EC1C0030B5E6 /* RecipeDetail.swift */,
+				A5AF0457290ACC9D006B57EC /* RecipeSearch.swift */,
+				A5BF462C2909B93700CEDA8A /* RecipeList.swift */,
+				A5AF0462290B145D006B57EC /* AsyncImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5AF045B290AF8E3006B57EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A5AF045C290AFA7C006B57EC /* RecipeModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A5AF045E290B13C0006B57EC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A5AF045F290B13FC006B57EC /* ImageLoader.swift */,
+				A5AF0464290B6C6B006B57EC /* Extensions.swift */,
+				A527A086290C2E17008254C8 /* PopUp.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A5AFA3BA2909D44D00BE578D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A5FCF713290C72C800D7F62C /* DatabaseManager.swift */,
+				A5AFA3BB2909D45F00BE578D /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A5BF46102909A89B00CEDA8A = {
+			isa = PBXGroup;
+			children = (
+				A5BF461B2909A89C00CEDA8A /* RecipeTacular */,
+				A51FF2B02909BD58008C02D0 /* RecipeTacularTests */,
+				A5BF461A2909A89C00CEDA8A /* Products */,
+				21B5678184889BAC5449A05E /* Pods */,
+				E08761B4256755FC47805651 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5BF461A2909A89C00CEDA8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF46192909A89C00CEDA8A /* RecipeTacular.app */,
+				A51FF2AF2909BD58008C02D0 /* RecipeTacularTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5BF461B2909A89C00CEDA8A /* RecipeTacular */ = {
+			isa = PBXGroup;
+			children = (
+				A5FCF719290CCA7D00D7F62C /* View */,
+				A5FCF718290CC60500D7F62C /* Resources */,
+				A5AF045E290B13C0006B57EC /* Utilities */,
+				A5AF0459290AF866006B57EC /* Info.plist */,
+				A5AFA3BA2909D44D00BE578D /* Manager */,
+				A5BF462A2909A8CC00CEDA8A /* Model */,
+				A5BF461C2909A89C00CEDA8A /* RecipeTacular.swift */,
+				A5BF461E2909A89C00CEDA8A /* ContentView.swift */,
+				A5BF46222909A89F00CEDA8A /* Preview Content */,
+			);
+			path = RecipeTacular;
+			sourceTree = "<group>";
+		};
+		A5BF46222909A89F00CEDA8A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF46232909A89F00CEDA8A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5BF462A2909A8CC00CEDA8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A51FF2A92909B9FB008C02D0 /* Recipe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5BF462B2909A8E800CEDA8A /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				A5AF045B290AF8E3006B57EC /* ViewModel */,
+				A5AF045A290AF8D7006B57EC /* View */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+		A5FCF718290CC60500D7F62C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF46202909A89E00CEDA8A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5FCF719290CCA7D00D7F62C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF462B2909A8E800CEDA8A /* Recipe */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E08761B4256755FC47805651 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72EBFFE5644CFC3720B2AE33 /* Pods_RecipeTacular.framework */,
+				92947D940098B0F2C196791F /* Pods_RecipeTacularTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A51FF2AE2909BD58008C02D0 /* RecipeTacularTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51FF2B52909BD58008C02D0 /* Build configuration list for PBXNativeTarget "RecipeTacularTests" */;
+			buildPhases = (
+				9EFCEC15715351E7B7AAFE48 /* [CP] Check Pods Manifest.lock */,
+				A51FF2AB2909BD58008C02D0 /* Sources */,
+				A51FF2AC2909BD58008C02D0 /* Frameworks */,
+				A51FF2AD2909BD58008C02D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51FF2B42909BD58008C02D0 /* PBXTargetDependency */,
+			);
+			name = RecipeTacularTests;
+			productName = RecipeTacularTests;
+			productReference = A51FF2AF2909BD58008C02D0 /* RecipeTacularTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5BF46182909A89C00CEDA8A /* RecipeTacular */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BF46272909A89F00CEDA8A /* Build configuration list for PBXNativeTarget "RecipeTacular" */;
+			buildPhases = (
+				EC96C2EB2830F75E74F07D16 /* [CP] Check Pods Manifest.lock */,
+				A5BF46152909A89C00CEDA8A /* Sources */,
+				A5BF46162909A89C00CEDA8A /* Frameworks */,
+				A5BF46172909A89C00CEDA8A /* Resources */,
+				C07A98ABC6725504F9CC582F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecipeTacular;
+			productName = RecipeTacular;
+			productReference = A5BF46192909A89C00CEDA8A /* RecipeTacular.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5BF46112909A89B00CEDA8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					A51FF2AE2909BD58008C02D0 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = A5BF46182909A89C00CEDA8A;
+					};
+					A5BF46182909A89C00CEDA8A = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = A5BF46142909A89B00CEDA8A /* Build configuration list for PBXProject "RecipeTacular" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5BF46102909A89B00CEDA8A;
+			productRefGroup = A5BF461A2909A89C00CEDA8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5BF46182909A89C00CEDA8A /* RecipeTacular */,
+				A51FF2AE2909BD58008C02D0 /* RecipeTacularTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A51FF2AD2909BD58008C02D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BF46172909A89C00CEDA8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BF46242909A89F00CEDA8A /* Preview Assets.xcassets in Resources */,
+				A5BF46212909A89E00CEDA8A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9EFCEC15715351E7B7AAFE48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecipeTacularTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C07A98ABC6725504F9CC582F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecipeTacular/Pods-RecipeTacular-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecipeTacular/Pods-RecipeTacular-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecipeTacular/Pods-RecipeTacular-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC96C2EB2830F75E74F07D16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecipeTacular-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A51FF2AB2909BD58008C02D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51FF2B22909BD58008C02D0 /* RecipeTacularTests.swift in Sources */,
+				A5FCF71B290CE39500D7F62C /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BF46152909A89C00CEDA8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BF461F2909A89C00CEDA8A /* ContentView.swift in Sources */,
+				A56732A32909EC1C0030B5E6 /* RecipeDetail.swift in Sources */,
+				A5AF0460290B13FC006B57EC /* ImageLoader.swift in Sources */,
+				A5BF462D2909B93700CEDA8A /* RecipeList.swift in Sources */,
+				A5AF0458290ACC9E006B57EC /* RecipeSearch.swift in Sources */,
+				A5AF0463290B145D006B57EC /* AsyncImageView.swift in Sources */,
+				A5FCF714290C72C800D7F62C /* DatabaseManager.swift in Sources */,
+				A56732A12909EC070030B5E6 /* RecipeRow.swift in Sources */,
+				A5AF0465290B6C6B006B57EC /* Extensions.swift in Sources */,
+				A5AFA3BC2909D45F00BE578D /* NetworkManager.swift in Sources */,
+				A5BF461D2909A89C00CEDA8A /* RecipeTacular.swift in Sources */,
+				A51FF2AA2909B9FB008C02D0 /* Recipe.swift in Sources */,
+				A527A087290C2E17008254C8 /* PopUp.swift in Sources */,
+				A5AF045D290AFA7C006B57EC /* RecipeModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A51FF2B42909BD58008C02D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5BF46182909A89C00CEDA8A /* RecipeTacular */;
+			targetProxy = A51FF2B32909BD58008C02D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A51FF2B62909BD58008C02D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 381376FB6F77D848B0CFB367 /* Pods-RecipeTacularTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39957QBL2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CyrusRefahi.RecipeTacularTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeTacular.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecipeTacular";
+			};
+			name = Debug;
+		};
+		A51FF2B72909BD58008C02D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF4D321C2A3167B9651AB5D /* Pods-RecipeTacularTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39957QBL2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CyrusRefahi.RecipeTacularTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeTacular.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecipeTacular";
+			};
+			name = Release;
+		};
+		A5BF46252909A89F00CEDA8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5BF46262909A89F00CEDA8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5BF46282909A89F00CEDA8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93CF6BA3CBA88751213AB63C /* Pods-RecipeTacular.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RecipeTacular/Preview Content\"";
+				DEVELOPMENT_TEAM = 39957QBL2C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecipeTacular/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CyrusRefahi.RecipeTacular;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5BF46292909A89F00CEDA8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A5089C7842B490C3AEC8DF /* Pods-RecipeTacular.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RecipeTacular/Preview Content\"";
+				DEVELOPMENT_TEAM = 39957QBL2C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecipeTacular/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CyrusRefahi.RecipeTacular;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A51FF2B52909BD58008C02D0 /* Build configuration list for PBXNativeTarget "RecipeTacularTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51FF2B62909BD58008C02D0 /* Debug */,
+				A51FF2B72909BD58008C02D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BF46142909A89B00CEDA8A /* Build configuration list for PBXProject "RecipeTacular" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BF46252909A89F00CEDA8A /* Debug */,
+				A5BF46262909A89F00CEDA8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BF46272909A89F00CEDA8A /* Build configuration list for PBXNativeTarget "RecipeTacular" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BF46282909A89F00CEDA8A /* Debug */,
+				A5BF46292909A89F00CEDA8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5BF46112909A89B00CEDA8A /* Project object */;
+}
